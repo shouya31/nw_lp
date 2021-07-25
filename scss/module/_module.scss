@@ -1,0 +1,195 @@
+@import "./mixin";
+
+//btn
+.c-square-btn {
+  display: block;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 360px;
+  height: 68px;
+  line-height: 68px;
+  color: $white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background:linear-gradient(to right, $btn-start, $btn-end); 
+  box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.3);
+  @include sp {
+    width: 327px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 64px;
+  }
+  &:hover {
+    opacity: 0.7; // 仮
+  }
+}
+
+// accordion Sec04
+.p-sec04 {
+  .c-acd-check {
+    display: none;
+  }
+  .c-acd-label {
+    background: url("/asset/img/sec04-01.png");
+    color: $base-blue;
+    display: block;
+    margin-bottom: 1px;
+    padding: 29px 32px 32px;
+    position: relative;
+    width: 488px;
+    height: 80px;
+    font-size: 22px;
+    font-weight: 700;
+    transition: .8s;
+  }
+  .c-acd-label:before,
+  .c-acd-label:after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin: auto;
+    height: 2px;
+    width: 14px;
+    background-color: $base-blue;
+    transition: .8s;
+  }
+  .c-acd-label:after{
+    transform: rotate(90deg);
+    transition: .8s;
+  }
+  .c-acd-content {
+    background: url("/asset/img/sec04-01.png");
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding-top: 10px;
+    color: $base;
+    font-size: 16px;
+    font-weight: 300;
+    visibility: hidden;
+    overflow: hidden;
+    line-height: 32px;
+  }
+  .c-acd-check:checked {
+    & + .c-acd-label::before {
+      opacity: 0;
+    }
+    & + .c-acd-label::after {
+      opacity: 1;
+      transform: rotate(0);
+      transition: .8s;
+    }
+    & + .c-acd-label  {
+      height: auto;
+      transition: .8s;
+    }
+    & + .c-acd-label .c-acd-content{
+      display: block;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      overflow: initial;
+      transition: .8s;
+    }
+  }
+  .c-acd-img01 {
+    @include acd-img("02")
+  }
+  .c-acd-img02 {
+    @include acd-img("03")
+  }
+  .c-acd-img03 {
+    @include acd-img("04")
+  }
+  .c-acd-img04 {
+    @include acd-img("05")
+  }
+  .c-acd-img05 {
+    @include acd-img("06")
+  }
+  .c-acd-img06 {
+    @include acd-img("07")
+  }
+}
+
+// accordion Sec09
+.p-sec09 {
+  .c-acd-check{
+    display: none;
+  }
+  .c-acd-label{
+      background: $thin-blue;
+      height: 72px;
+      line-height: 72px;
+      padding-left: 80px;
+      display: block;
+      position: relative;
+  }
+  .c-acd-label:before,
+  .c-acd-label:after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    right: 32px;
+    margin: auto;
+    height: 2px;
+    width: 14px;
+    background-color: $base-blue;
+    transition: .8s;
+  }
+  .c-acd-label:after{
+    transform: rotate(90deg);
+    transition: .8s;
+  }
+  .c-acd-content{
+      display: block;
+      height: 0;
+      opacity: 0;
+      padding: 7px 80px 0;
+      transition: .8s;
+      visibility: hidden;
+  }
+  .c-acd-img {
+    position: relative;
+    &::after {
+      content: '';
+      background-image: url('/asset/img/sec09-01.png');
+      position: absolute;
+      top: 17px;
+      left: 35px;
+      width: 16px;
+      height: 34px;
+    }
+  }
+  .c-acd-check:checked {
+    & + .c-acd-label::before {
+      opacity: 0;
+    }
+    & + .c-acd-label::after {
+      opacity: 1;
+      transform: rotate(0);
+      transition: .8s;
+    }
+    & + .c-acd-label + .c-acd-content{
+      height: 50px;
+      opacity: 1;
+      padding: 27px 80px 0;
+      visibility: visible;
+      margin-bottom: 86px;
+      position: relative;
+      line-height: 32px;
+      font-weight: 300;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 21px;
+        left: 32px;
+        background-image: url("/asset/img/sec09-02.png");
+        width: 24px;
+        height: 53px;
+      }
+    }
+  }
+}
