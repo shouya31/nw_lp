@@ -482,6 +482,8 @@ p {
 
 img {
   image-rendering: -webkit-optimize-contrast;
+  width: 100%;
+  height: auto;
 }
 
 .pc-only {
@@ -528,10 +530,13 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#F2437F), to(#FFC80E));
-  background: linear-gradient(to right, #F2437F, #FFC80E);
+  background: -webkit-gradient(linear, left top, right top, from(#F2437F), color-stop(50%, #FFC80E), to(#F98B42));
+  background: linear-gradient(90deg, #F2437F 0%, #FFC80E 50%, #F98B42 100%);
+  background-size: 200% 68px;
   -webkit-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 @media (max-width: 768px) {
@@ -544,7 +549,7 @@ img {
 }
 
 .c-square-btn:hover {
-  opacity: 0.7;
+  background-position: 100% 0;
 }
 
 .p-sec04 .c-acd-check {
@@ -2711,6 +2716,11 @@ header {
 
 .p-sec08-content-ttl-option {
   margin-bottom: 13px;
+}
+
+.p-sec08-content-ttl-option img {
+  max-width: 71px;
+  margin: 0 auto;
 }
 
 .p-sec09 {

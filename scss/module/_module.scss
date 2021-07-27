@@ -12,8 +12,11 @@
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  background:linear-gradient(to right, $btn-start, $btn-end); 
+  // background:linear-gradient(to right, $btn-start, $btn-end); 
+  background:linear-gradient(90deg, $btn-start 0%, $btn-end 50% ,$btn-middle 100%);
+  background-size: 200% 68px;
   box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.3);
+  transition: all 0.5s ease-in-out 0s;
   @include sp {
     width: 327px;
     height: 64px;
@@ -21,7 +24,7 @@
     line-height: 64px;
   }
   &:hover {
-    opacity: 0.7; // 仮
+    background-position: 100% 0;
   }
 }
 

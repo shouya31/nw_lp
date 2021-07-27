@@ -848,6 +848,10 @@ header {
     }
     &-content-ttl-option {
         margin-bottom: 13px;
+        img {
+            max-width: 71px;
+            margin: 0 auto;
+        }
     }
 }
 
