@@ -1,0 +1,50 @@
+@import "../setting/_config";
+
+// 共通変数
+$content-width-pc: 1000px;
+$content-width-sp: 343px;
+
+
+// 共通css
+body {
+  font-family: Hiragino Sans,"ヒラギノ角ゴシック",Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Roboto,"Droid Sans",YuGothic,"游ゴシック",Meiryo,"メイリオ",Verdana,"ＭＳ Ｐゴシック",sans-serif;
+  color: $base;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: initial;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  width: 100%;
+  height: auto;
+}
+
+.pc-only {
+  display: block !important;
+  @include sp {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+
+.content-width {
+  max-width: $content-width-pc;
+  margin: 0 auto;
+  @include sp {
+    padding: 0 15px;
+    max-width: $content-width-sp;
+    padding: 0 15px;
+  }
+}
