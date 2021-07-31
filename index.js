@@ -1,7 +1,7 @@
 ScrollReveal().reveal(".scroll-top-animation", {
-  duration: 1600,
+  duration: 2000,
   origin: "bottom",
   distance: "80px",
   reset: false,
-  delay: 400
+  delay: 300
 });
