@@ -66,7 +66,7 @@
     background: url("/asset/img/sec04-01.png");
     display: block;
     height: 0;
-    opacity: 0;
+    // opacity: 0;
     padding-top: 10px;
     color: $base;
     font-size: 16px;
@@ -75,28 +75,28 @@
     overflow: hidden;
     line-height: 32px;
   }
-  .c-acd-check:checked {
-    & + .c-acd-label::before {
-      opacity: 0;
-    }
-    & + .c-acd-label::after {
-      opacity: 1;
-      transform: rotate(0);
-      transition: .8s;
-    }
-    & + .c-acd-label  {
-      height: auto;
-      transition: .8s;
-    }
-    & + .c-acd-label .c-acd-content{
-      display: block;
-      height: auto;
-      opacity: 1;
-      visibility: visible;
-      overflow: initial;
-      transition: .8s;
-    }
-  }
+  // .c-acd-check:checked {
+  //   & + .c-acd-label::before {
+  //     opacity: 0;
+  //   }
+  //   & + .c-acd-label::after {
+  //     opacity: 1;
+  //     transform: rotate(0);
+  //     transition: .8s;
+  //   }
+  //   & + .c-acd-label  {
+  //     height: auto;
+  //     transition: .8s;
+  //   }
+  //   & + .c-acd-label .c-acd-content{
+  //     display: block;
+  //     height: auto;
+  //     opacity: 1;
+  //     visibility: visible;
+  //     overflow: initial;
+  //     transition: .8s;
+  //   }
+  // }
   .c-acd-img01 {
     @include acd-img("02")
   }
@@ -149,7 +149,7 @@
   .c-acd-content{
       display: block;
       height: 0;
-      opacity: 0;
+      // opacity: 0;
       padding: 7px 80px 0;
       transition: .8s;
       visibility: hidden;
@@ -167,9 +167,9 @@
     }
   }
   .c-acd-check:checked {
-    & + .c-acd-label::before {
-      opacity: 0;
-    }
+    // & + .c-acd-label::before {
+    //   opacity: 0;
+    // }
     & + .c-acd-label::after {
       opacity: 1;
       transform: rotate(0);

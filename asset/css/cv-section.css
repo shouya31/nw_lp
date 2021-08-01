@@ -1,0 +1,86 @@
+.p-contact {
+  background-image: url("/asset/img/contact-01.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 140px;
+  position: relative;
+  background-size: 1300px;
+  margin: 0 auto;
+}
+
+
+
+.p-contact-ttl {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.p-contact-read {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+
+.p-contact-tel {
+  display: block;
+  color: #2277ea;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  width: 183px;
+  margin: 37px auto 18px;
+  position: relative;
+}
+
+.p-contact-tel::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -25px;
+  background-image: url("/asset/img/contact-04.png");
+  width: 16px;
+  height: 16px;
+}
+
+.p-contact-tel-read {
+  color: #2277ea;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .p-contact-ttl {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  p-contact-ttl::before {
+    position: absolute;
+    content: "";
+    background-image: url("/asset/img/cv-contact.png");
+    width: 100px;
+    height: 100px;
+  }
+  .p-contact {
+    background-image: url("/asset/img/cv-section-sp.png");
+    background-size: 850px 400px;
+    padding-top: 80px;
+  }
+  .p-contact-tel {
+    margin-top: 40px;
+  }
+  .p-contact {
+    width: 100%;
+  }
+
+  .p-contact-read {
+    padding: 0px 8px;
+    width: 90%;
+  }
+  p.p-contact-read br {
+    display: none;
+  }
+}

@@ -1,0 +1,87 @@
+.p-sec03 {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.p-sec03::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("/asset/img/sec03-01.png");
+  background-position: left;
+  width: 536px;
+  height: 349px;
+}
+
+.p-sec03-ttl {
+  font-size: 36px;
+  line-height: 62px;
+  font-weight: 800;
+  text-align: center;
+  color: #203467;
+  text-align: left;
+  margin-bottom: 77px;
+}
+
+.p-sec03-ttl span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.p-sec03-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-sec03-content03-ttl {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #2277ea;
+  margin-bottom: 30px;
+  margin-top: -11px;
+}
+
+.p-sec03-content03-left {
+  width: 540px;
+  margin-left: 70px;
+  line-height: 32px;
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  .p-sec03-ttl {
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 260px;
+  }
+  .p-sec03-ttl span {
+    font-size: 18px;
+  }
+  .p-sec03-ttl span::after {
+	content: "\A" ;
+	white-space: pre ;
+}
+  .p-sec03-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  .p-sec03-content03-ttl {
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .p-sec03-content03-left {
+    width: auto;
+    margin-left: 0px;
+  }
+  .p-sec03::after {
+    top: 160px;
+  }
+}
