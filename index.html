@@ -7,68 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>natural works</title>
   <!-- <link rel=”icon” href=“/image/favicon.ico”> -->
+  <link rel="stylesheet" href="/asset/css/reset.css" type="text/css" media="all">
   <link rel="stylesheet" href="/asset/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/fv.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/cv-section.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section1.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section2.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section3.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section4.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section5.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section6.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section7.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section8.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/asset/css/section9.css" type="text/css" media="all">
-
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <!-- dammy header -->
-  <header class="dammy-header" style="width:100vw;">
-    <img class="pc-only" src="/asset/img/dammy-header.png" alt="">
-    <!-- <img class="sp-only" src="/asset/img/dammy-header-sp.png" alt=""> -->
-  </header>
-
   <main>
     <article>
-
-      <!-- MV -->
-      <section class="p-mv">
-        <h1 class="p-mv-ttl">採用サイト制作</h1>
-        <p class="p-mv-read">
+      <!-- FV -->
+      <section class="fv">
+        <h1 class="fv-ttl">採用サイト制作</h1>
+        <p class="fv-sentence">
           採用サイト制作のスペシャリストが<br>
           戦略的でパフォーマンスの<br class="sp-only">高い採用サイトを制作
         </p>
         <a href="#" class="c-square-btn">無料で採用サイトを制作を相談する</a>
-        <!-- カルーセル部分 sta-->
-        <div class="p-mv-logo">
-          <img width="2062" height="67" loading="lazy" class="pc-only" src="/asset/img/mv-05.png" alt="企業リスト">
-          <img width="1800" height="59" loading="lazy" class="sp-only" src="/asset/img/mv-05-sp.png" alt="企業リスト">
-        </div>
-        <!-- カルーセル部分 end-->
+        <picture class="fv-logo">
+          <source srcset="/asset/img/mv-05-sp.png" media="(min-width: 768px)" alt="企業リスト" />
+          <img width="2062" height="67" loading="lazy" src="/asset/img/mv-05.png" alt="企業リスト">
+        </picture>
       </section>
 
       <!-- Sec01 -->
-      <section class="p-sec01">
+      <section class="sec01">
         <div class="content-width">
-          <div class="p-sec01-wrap">
-            <div class="p-sec01-read-wrap">
-              <div class="p-sec01-read01 scroll-top-animation">
-                <p class="p-sec01-read01-text">
+          <div class="sec01-wrap">
+            <div class="sec01-check-block scroll-top-animation">
+              <div class="sec01-check-block_left-content">
+                <p class="sec01-check-block_left-content-text">
                   求めている人材に<br>
                   来て欲しい
                 </p>
               </div>
-              <div class="p-sec01-read02 scroll-top-animation">
-                <p class="p-sec01-read02-text">
+              <div class="sec01-check-block_center-content">
+                <p class="sec01-check-block_center-content-text">
                   応募が集まる<br>
                   自社独自の<br>
                   採用サイトが欲しい
                 </p>
               </div>
-              <div class="p-sec01-read03 scroll-top-animation">
-                <p class="p-sec01-read03-text">
+              <div class="sec01-check-block_right-content">
+                <p class="sec01-check-block_right-content-text">
                   採用コストを<br>
                   減らしたい
                 </p>
@@ -76,11 +56,10 @@
             </div>
           </div>
 
-          <h2 class="p-sec01-ttl pc-only scroll-top-animation"><span>ニュートラルワークスの</span><br>採用サイト制作サービスがご要望に応えます</h2>
-          <h2 class="p-sec01-ttl sp-only scroll-top-animation"><span>ニュートラルワークスの</span><br>採用サイト制作サービスが<br>ご要望に応えます</h2>
-          <div class="p-sec01-content-wrap scroll-top-animation">
-            <div class="p-sec01-left">
-              <h3 class="p-sec01-left-ttl">採用でこんな<br>お悩みありませんか？</h3>
+          <h2 class="sec01-ttl scroll-top-animation"><span>ニュートラルワークスの</span><br>採用サイト制作サービスが<br class="pc-only">ご要望に応えます</h2>
+          <div class="sec01-content-wrap scroll-top-animation">
+            <div class="sec01-left">
+              <h3 class="sec01-left-ttl">採用でこんな<br>お悩みありませんか？</h3>
               <figure>
                 <img width="264" height="231" loading="lazy" class="pc-only" src="/asset/img/sec01-04.png"
                   alt="イメージ：採用担当">
@@ -88,19 +67,18 @@
                   alt="イメージ：採用担当">
               </figure>
             </div>
-            <div class="p-sec01-right">
-              <ul class="p-sec01-list-wrap">
-                <li class="p-sec01-list01">応募者とのミスマッチング</li>
-                <li class="p-sec01-list02">求める人材がなかなか来ない</li>
-                <li class="p-sec01-list03">入社してもすぐ辞めてしまう</li>
-                <li class="p-sec01-list04">そもそも応募が来ない</li>
-                <li class="p-sec01-list05">忙しくて採用サイトを<br>制作できない</li>
-                <li class="p-sec01-list06">採用コストが高いのに、<br>採用が上手くいかない</li>
+            <div class="sec01-right">
+              <ul class="sec01-lists">
+                <li class="sec01-list sec01-list01">応募者とのミスマッチング</li>
+                <li class="sec01-list sec01-list02">求める人材がなかなか来ない</li>
+                <li class="sec01-list sec01-list03">入社してもすぐ辞めてしまう</li>
+                <li class="sec01-list sec01-list04">そもそも応募が来ない</li>
+                <li class="sec01-list sec01-list05">忙しくて採用サイトを<br class="sp-only">制作できない</li>
+                <li class="sec01-list sec01-list06">採用コストが高いのに、<br class="sp-only">採用が上手くいかない</li>
               </ul>
             </div>
           </div>
-          <p class="p-sec01-end-text scroll-top-animation pc-only">ニュートラルワークスの採用サイト制作サービスで解決いたします。</p>
-          <p class="p-sec01-end-text scroll-top-animation sp-only">ニュートラルワークスの採用サイト<br>制作サービスで解決いたします。</p>
+          <p class="sec01-end-text scroll-top-animation">ニュートラルワークスの採用サイト<br class="sp-only">制作サービスで解決いたします。</p>
         </div>
         <div class="p-contact scroll-top-animation">
           <p class="p-contact-ttl">採用サイト制作なら<br>お気軽にご相談ください</p>
@@ -115,74 +93,74 @@
       </section>
 
       <!-- Sec02 -->
-      <section class="p-sec02">
+      <section class="sec02">
         <div class="content-width">
-          <h2 class="p-sec02-ttl scroll-top-animation">自社にとって本当に必要な人材に<br>選ばれる採用サイトを</h2>
-          <p class="p-sec02-read scroll-top-animation">
+          <h2 class="sec02-ttl scroll-top-animation">自社にとって本当に必要な人材に<br class="pc-only">選ばれる採用サイトを</h2>
+          <p class="sec02-read scroll-top-animation">
             採用サイトは、リクルート情報の発信に特化したサイト。採用サイトを通じて企業に興味を持った求職者がエントリーしてくるため、モチベーションの高い人材を獲得できます。アトラクティブな採用サイト制作によって、エントリー率や社員定着率の向上、採用ミスマッチングの軽減などを実現します。
           </p>
-          <div class="p-sec02-content01 scroll-top-animation">
+          <div class="sec02-content01 scroll-top-animation">
             <div>
-              <h3 class="p-sec02-content01-ttl">採用サイトで“いい人材”に<br>効果的なアプローチ</h3>
-              <p class="p-sec02-content01-read">
+              <h3 class="sec02-content01-ttl">採用サイトで“いい人材”に<br>効果的なアプローチ</h3>
+              <p class="sec02-content01-read">
                 採用サイトはただ公開するだけでは十分な効果を発揮できません。企業の想いや、求める人物像、風土などをしっかりと組み込んだ上で、求職者の興味を惹きつけるデザインや構成を考えることが大切です。ニュートラルワークスはWEBのスペシャリストが集まったクリエイティブチーム。豊富な制作ノウハウにより”成果のある採用サイト”を提案します。
               </p>
             </div>
             <figure>
-              <img width="389" height="399" loading="lazy" src="/asset/img/sec02-01.png" alt="イメージ：いい人材">
+              <img width="389" height="399" loading="lazy" src="/asset/img/sec02-01.png" alt="イメージ：いい人材" class="sec02-content-image">
             </figure>
           </div>
-          <div class="p-sec02-content02 scroll-top-animation">
+          <div class="sec02-content02 scroll-top-animation">
             <figure>
-              <img width="389" height="399" loading="lazy" src="/asset/img/sec02-02.png" alt="イメージ：エントリー">
+              <img width="389" height="399" loading="lazy" src="/asset/img/sec02-02.png" alt="イメージ：エントリー" class="sec02-content-image">
             </figure>
-            <div class="p-sec02-content02-left">
-              <h3 class="p-sec02-content02-ttl">採用サイトはエントリーするか否かの<br>最も重要な判断材</h3>
-              <p class="p-sec02-content02-read">
+            <div class="sec02-content02-left">
+              <h3 class="sec02-content02-ttl">採用サイトはエントリーするか否かの<br>最も重要な判断材</h3>
+              <p class="sec02-content02-read">
                 採用サイトとは、企業サイト（コーポレートサイト）とは別に、企業が採用活動に力を入れるためにつくる特化サイトです。デザインやサイト構造なども採用に特化して制作し、求職者に必要なコンテンツのみで構成します。求人誌、求人ポータルサイトやSNSなど、あらゆる媒体を通して集まった求職者は応募先の企業について可能な限りの情報を収集しようとインターネットで検索し、最終的に採用サイトへおとずれます。このとき採用サイトはフィルタリングの役目となり、エントリーするか否かの重要な判断材料となります。
               </p>
             </div>
           </div>
-          <ul class="pc-only p-sec02-phase scroll-top-animation">
-            <li class="p-sec02-list01">
+          <ul class="sec02-phase scroll-top-animation">
+            <li class="sec02-list01">
               ネットや求人誌で<br>
               気になる求人がある
             </li>
-            <li class="p-sec02-list02">
+            <li class="sec02-list02">
               会社の詳細を<br>
               検索する
             </li>
-            <li class="p-sec02-list03">
+            <li class="sec02-list03">
               情報を多く<br>
               収集できる
             </li>
-            <li class="p-sec02-list04">
+            <li class="sec02-list04">
               理解が深まり<br>
               エントリーする
             </li>
           </ul>
+          <figure class="sec02-phase">
+            <img width="960" height="107" loading="lazy" src="/asset/img/sec02-13.png" alt="フェーズ">
+          </figure>
           <ul class="sp-only scroll-top-animation">
             <img src="/asset/img/specify-purpos-sp.png" alt="">
           </ul>
-          <figure class="pc-only">
-            <img width="960" height="107" loading="lazy" src="/asset/img/sec02-13.png" alt="フェーズ">
-          </figure>
         </div>
       </section>
 
       <!-- Sec03 -->
-      <section class="p-sec03">
+      <section class="sec03">
         <div class="content-width">
-          <h2 class="p-sec03-ttl scroll-top-animation">
-            <span>ニュートラルワークスの</span><br>採用サイト制作サービスを利用すると<br>パフォーマンスの高い採用サイトが<br>出来上がります。
+          <h2 class="sec03-ttl scroll-top-animation">
+            <span>ニュートラルワークスの</span><br class="pc-only">採用サイト制作サービスを利用すると<br class="pc-only">パフォーマンスの高い採用サイトが<br class="pc-only">出来上がります。
           </h2>
-          <div class="p-sec03-content scroll-top-animation">
+          <div class="sec03-content scroll-top-animation">
             <figure>
               <img width="389" height="399" loading="lazy" src="/asset/img/sec03-02.png" alt="イメージ：エントリー">
             </figure>
-            <div class="p-sec03-content03-left">
-              <h3 class="p-sec03-content03-ttl">パフォーマンスの高い採用サイトは<br>採用活動の効率化に大きく貢献する</h3>
-              <p class="p-sec03-content03-read">
+            <div class="sec03-content03-left">
+              <h3 class="sec03-content03-ttl">パフォーマンスの高い採用サイトは<br>採用活動の効率化に大きく貢献する</h3>
+              <p class="sec03-content03-read">
                 採用ミスマッチを事前に防ぐには、入社前のプロセスで求職者がいかに採用サイトを通して「具体的に仕事内容をイメージできるか」「自分が会社の風土に合っているのかを見極められるか」が鍵となります。こうしたポイントを押さえた上で、企業の魅力を十分に推し出せるコンテンツをつくることが大切です。
               </p>
             </div>
@@ -191,10 +169,10 @@
       </section>
 
       <!-- Sec04 -->
-      <section class="p-sec04">
+      <section class="sec04">
         <div class="content-width">
-          <h2 class="p-sec04-ttl scroll-top-animation">パフォーマンスの高い採用サイトを<br>制作するメリット</h2>
-          <ul class="p-sec04-list-wrap scroll-top-animation">
+          <h2 class="sec04-ttl scroll-top-animation">パフォーマンスの高い採用サイトを<br>制作するメリット</h2>
+          <ul class="sec04-list-wrap scroll-top-animation">
             <li class="c-acd-img01">
               <input id="acd-check01" class="c-acd-check" type="checkbox">
               <label class="c-acd-label" for="acd-check01">
@@ -265,27 +243,27 @@
       </section>
 
       <!-- Sec05 -->
-      <section class="p-sec05">
+      <section class="sec05">
         <div class="content-width">
-          <h2 class="p-sec05-ttl scroll-top-animation"><span>ニュートラルワークスが</span><br>パフォーマンスの高い採用サイトを<br>制作できる3つの理由</h2>
-          <p class="p-sec05-read scroll-top-animation">
+          <h2 class="sec05-ttl scroll-top-animation"><span>ニュートラルワークスが</span><br>パフォーマンスの高い採用サイトを<br>制作できる3つの理由</h2>
+          <p class="sec05-read scroll-top-animation">
             ニュートラルワークスが成果がでる採用サイトが制作できるのは、Webマーケティングの知見を持った大手ネット広告代理店出身者と多くのアワードを受賞したデザイナーが多数在籍しているからです。ただ応募者数を増やす採用サイトではなく、求めている人材が集まる質の高い採用サイトを制作いたします。
           </p>
-          <div class="p-sec05-content01 scroll-top-animation">
+          <div class="sec05-content01 scroll-top-animation">
             <figure>
               <img width="389" height="399" loading="lazy" src="/asset/img/sec05-01.png" alt="イメージ：エントリー">
             </figure>
-            <div class="p-sec05-content01-left">
-              <h3 class="p-sec05-content01-ttl">Webマーケティングの<br>実力者集団</h3>
+            <div class="sec05-content01-left">
+              <h3 class="sec05-content01-ttl">Webマーケティングの<br>実力者集団</h3>
               <p>
                 ニュートラルワークスには大手ネット広告代理店出身の実力者が多数在籍しております。求めている優秀な人材を採用サイトに集めるためには、ユーザー分析、競合分析などを行い、適格にアプローチするWebマーケティングの知見が必ず必要です。大手・中小企業の人材業界でも集客を改善してきた実力者が、会社にマッチングする人材を採用サイトに集める仕組を構築します。
               </p>
             </div>
           </div>
-          <div class="p-sec05-content02 scroll-top-animation">
+          <div class="sec05-content02 scroll-top-animation">
             <div>
-              <h3 class="p-sec05-content02-ttl">理念や想いを形にする<br>質の高いデザイン</h3>
-              <p class="p-sec05-content02-read">
+              <h3 class="sec05-content02-ttl">理念や想いを形にする<br>質の高いデザイン</h3>
+              <p class="sec05-content02-read">
                 会社の理念や想いを採用サイトに形にするのもニュートラルワークスが得意としている分野です。採用サイトにアクセスを集め、応募数を増やすのはもちろん大切なのですが、それ以上に会社の理念に共感した人を集めることも大切です。ニュートラルワークスには、多くのアワードを受賞した選ばれたデザイナーが在籍していますのでデザイン面についても自信を持ってご提案をさせていただきます。
               </p>
             </div>
@@ -293,12 +271,12 @@
               <img width="389" height="399" loading="lazy" src="/asset/img/sec05-04.png" alt="イメージ：いい人材">
             </figure>
           </div>
-          <div class="p-sec05-content03 scroll-top-animation">
+          <div class="sec05-content03 scroll-top-animation">
             <figure>
               <img width="389" height="399" loading="lazy" src="/asset/img/sec05-05.png" alt="イメージ：エントリー">
             </figure>
-            <div class="p-sec05-content03-left">
-              <h3 class="p-sec05-content03-ttl">迅速なレスポンス対応と<br>密なコミュニケーション</h3>
+            <div class="sec05-content03-left">
+              <h3 class="sec05-content03-ttl">迅速なレスポンス対応と<br>密なコミュニケーション</h3>
               <p>
                 ニュートラルワークスでは、お客様の問い合わせや相談に対して迅速に対応することを大切にしています。変化の激しいWeb業界において、コミュニケーションの遅延は事業に致命的な影響を与えることがあります。少しでも早くお客様の販売促進につながるよう、迅速なレスポンスを常に心がけております。またお客様と密にコミュニケーションをとることで、ヒアリングの質を高め、課題に対して効果的な提案を行えるようにしております。
               </p>
@@ -318,98 +296,98 @@
       </section>
 
       <!-- Sec06 -->
-      <section class="p-sec06">
+      <section class="sec06">
         <div class="content-width">
-          <h2 class="p-sec06-ttl scroll-top-animation">効果的な採用サイトにするための<br>戦略と設計の流れ</h2>
-          <p class="p-sec06-read scroll-top-animation">
+          <h2 class="sec06-ttl scroll-top-animation">効果的な採用サイトにするための<br>戦略と設計の流れ</h2>
+          <p class="sec06-read scroll-top-animation">
             採用サイトはただ公開するだけでは十分な効果を発揮できません。企業の想いや、求める人物像、風土などをしっかりと組み込んだ上で、求職者の興味を惹きつけるデザインや構成を考えることが大切です。ニュートラルワークスはWEBのスペシャリストが集まったクリエイティブチーム。豊富な制作ノウハウにより”成果のある採用サイト”を提案します。
           </p>
-          <div class="p-sec06-content-wrap">
+          <div class="sec06-content-wrap">
             <figure>
               <img width="20" height="1260" loading="lazy" src="/asset/img/sec06-01.png" alt="ストラテジーフロー">
             </figure>
             <div>
-              <div class="p-sec06-strategy-wrap01">
+              <div class="sec06-strategy-wrap sec06-list01">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>戦略</span>
-                    <h3 class="p-sec06-strategy-ttl">丁寧なヒアリングで採用ミスマッチ対策</h3>
+                    <h3 class="sec06-strategy-ttl">丁寧なヒアリングで採用ミスマッチ対策</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     企業の魅力を引き出すのはもちろん、採用ミスマッチを防ぐためには、採用サイトで伝える情報を過度なギャップがないように調整することも大切です。採用活動における企業の想い、求める人物像な、企業の強みや現状の課題についても丁寧なヒアリングをおこないます。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="96" loading="lazy" src="/asset/img/sec06-02.png" alt="Step1">
                 </figure>
               </div>
-              <div class="p-sec06-strategy-wrap02">
+              <div class="sec06-strategy-wrap sec06-list02">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>戦略</span>
-                    <h3 class="p-sec06-strategy-ttl">競合と差をつける戦略・立案・コンテンツ企画</h3>
+                    <h3 class="sec06-strategy-ttl">競合と差をつける戦略・立案・コンテンツ企画</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     就職売り手市場の今、競合他社の採用サイト戦略の分析は必要不可欠。コンテンツの質や量、デザインコンセプト、検索順位、ユーザビリティなどから競合サイトを分析、新卒・中途など異なる求職者のニーズを把握し他社と差をつける戦略とコンテンツを考案します。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="96" loading="lazy" src="/asset/img/sec06-03.png" alt="Step2">
                 </figure>
               </div>
-              <div class="p-sec06-strategy-wrap03">
+              <div class="sec06-strategy-wrap sec06-list03">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>戦略</span>
-                    <h3 class="p-sec06-strategy-ttl">公開後から成果につなげる採用サイト運用サポート</h3>
+                    <h3 class="sec06-strategy-ttl">公開後から成果につなげる採用サイト運用サポート</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     採用サイトはリスティング広告などを活用した独自の宣伝ができます。結果データを確認しながら改善を繰り返し、採用サイトのパフォーマンスを高めていきます。弊社では公開後のリスティング広告やSEO対策などの採用サイトの効果的な運用についてもサポート可能です。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="96" loading="lazy" src="/asset/img/sec06-04.png" alt="Step3">
                 </figure>
               </div>
-              <div class="p-sec06-strategy-wrap04">
+              <div class="sec06-strategy-wrap sec06-list04">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>設計</span>
-                    <h3 class="p-sec06-strategy-ttl">サイトマップ考案</h3>
+                    <h3 class="sec06-strategy-ttl">サイトマップ考案</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     サイトの利便性は、ユーザーへ与える企業の印象にも影響するものです。サイトに訪れた求職者がすぐに目的の情報へたどり着けるかどうかは重要です。戦略を基に、利便性の高い採用サイトにするための構成を考えます。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="v" loading="lazy" src="/asset/img/sec06-05.png" alt="Step4">
                 </figure>
               </div>
-              <div class="p-sec06-strategy-wrap05">
+              <div class="sec06-strategy-wrap sec06-list05">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>設計</span>
-                    <h3 class="p-sec06-strategy-ttl">デザイン</h3>
+                    <h3 class="sec06-strategy-ttl">デザイン</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     企業やブランドの想いや在り方を表現するのに、どのようなデザインが一番適しているのか、お客様とヒアリングを重ねながら、フォントやイメージカラーの選定、キービジュアルを作り出していきます。それと同時に、情報の優先順位やサイトの目的を考慮し、グローバルナビやコンテンツの最適な配置、トップページからの分かりやすい導線などを設計していきます。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="96" loading="lazy" src="/asset/img/sec06-06.png" alt="Step5">
                 </figure>
               </div>
-              <div class="p-sec06-strategy-wrap06">
+              <div class="sec06-strategy-wrap sec06-list06">
                 <div class="scroll-top-animation">
-                  <div class="p-sec06-strategy-ttl-wrap">
+                  <div class="sec06-strategy-ttl-wrap">
                     <span>設計</span>
-                    <h3 class="p-sec06-strategy-ttl">ブログシステム</h3>
+                    <h3 class="sec06-strategy-ttl">ブログシステム</h3>
                   </div>
-                  <p class="p-sec06-strategy-read">
+                  <p class="sec06-strategy-read">
                     企業の理念、社内の様子や活動など、求職者の理解を深めるのに必要な情報を採用サイトを通して発信していくことで、エントリー率の向上につながります。弊社では日々の更新・運用を簡単におこなえるWordPressを用いたサイト制作を得意としております。ニーズにあわせたカスタマイズも可能です。運用者にとっても使いやすい採用サイトを提供いたします。
                   </p>
                 </div>
-                <figure class="p-sec06-strategy-img">
+                <figure class="sec06-strategy-img">
                   <img width="96" height="96" loading="lazy" src="/asset/img/sec06-07.png" alt="Step6">
                 </figure>
               </div>
@@ -429,12 +407,12 @@
       </section>
 
       <!-- Sec07 -->
-      <section class="p-sec07 pc-only">
+      <section class="sec07">
         <div class="content-width">
-          <h2 class="p-sec07-ttl scroll-top-animation">採用サイト制作実績の<br>参考事例</h2>
-          <div class="p-sec07-content01-wrap">
-            <h4 class="p-sec07-content01-ttl scroll-top-animation">Coincheck</h4>
-            <div class="p-sec07-img-wrap scroll-top-animation">
+          <h2 class="sec07-ttl scroll-top-animation">採用サイト制作実績の<br>参考事例</h2>
+          <div class="sec07-content01-wrap pc-only">
+            <h4 class="sec07-content01-ttl scroll-top-animation">Coincheck</h4>
+            <div class="sec07-img-wrap scroll-top-animation">
               <figure>
                 <img width="380" height="220" loading="lazy" src="/asset/img/sec07-01.png" alt="Coincheck">
               </figure>
@@ -442,37 +420,60 @@
                 <img width="476" height="209" loading="lazy" src="/asset/img/sec07-02.png" alt="サイトマップ">
               </figure>
             </div>
-            <p class="p-sec07-content01-read scroll-top-animation">
+            <p class="sec07-content01-read scroll-top-animation">
               求職者向けに会社の魅力を伝え、就職の安心材料となる社内の写真や従業員の写真、インタビュー紹介などのコンテンツ設計、デザイン、
               実装までサポートいたします。サイト内で使用する写真の印象も重要な判断ポイントとなるため、素材撮影まで対応。</p>
-            <div class="p-sec07-content01-detail p-sec07-content01-detail-top scroll-top-animation">
+            <div class="sec07-content01-detail sec07-content01-detail-top scroll-top-animation">
               <span class="">担当</span>
               <p>ディレクション / デザイン / コーディング / 撮影及び撮影ディレクション</p>
             </div>
-            <div class="p-sec07-content01-detail scroll-top-animation">
+            <div class="sec07-content01-detail scroll-top-animation">
               <span>期間</span>
               <p>2.0ヶ月〜3.0ヶ月</p>
             </div>
           </div>
-          <div class="p-sec07-content02-wrap">
-            <h3 class="p-sec07-content02-ttl">多種多様な業界の取引実績</h3>
+
+          <div class="sec07-content01-wrap sp-only">
+            <h4 class="sec07-content01-ttl scroll-top-animation">Coincheck</h4>
+            <p class="sec07-content01-read scroll-top-animation">
+              求職者向けに会社の魅力を伝え、就職の安心材料となる社内の写真や従業員の写真、インタビュー紹介などのコンテンツ設計、デザイン、
+              実装までサポートいたします。サイト内で使用する写真の印象も重要な判断ポイントとなるため、素材撮影まで対応。</p>
+            <div class="sec07-content01-detail sec07-content01-detail-top scroll-top-animation">
+              <span class="">担当</span>
+              <p>ディレクション / デザイン / コーディング / 撮影及び撮影ディレクション</p>
+            </div>
+            <div class="sec07-content01-detail scroll-top-animation">
+              <span>期間</span>
+              <p>2.0ヶ月〜3.0ヶ月</p>
+            </div>
+            <div class="sec07-img-wrap scroll-top-animation">
+              <figure>
+                <img width="380" height="220" loading="lazy" src="/asset/img/sec07-01.png" alt="Coincheck">
+              </figure>
+              <figure>
+                <img width="476" height="209" loading="lazy" src="/asset/img/sec07-02.png" alt="サイトマップ">
+              </figure>
+            </div>
+          </div>
+          <div class="sec07-content02-wrap">
+            <h3 class="sec07-content02-ttl">多種多様な業界の取引実績</h3>
             <div class="scroll-top-animation scroll-top-animation">
-              <div class="p-sec07-content02-img-wrap p-sec07-content02-img-wrap-top">
-                <figure><img width="89" height="49" loading="lazy" src="/asset/img/sec07-03.png" alt="JAL"></figure>
-                <figure><img width="118" height="18" loading="lazy" src="/asset/img/sec07-04.png" alt="AlpenGroup">
+              <div class="sec07-content02-img-wrap sec07-content02-img-wrap-top only-pc-flex">
+                <figure><img loading="lazy" src="/asset/img/sec07-03.png" alt="JAL"></figure>
+                <figure><img  loading="lazy" src="/asset/img/sec07-04.png" alt="AlpenGroup">
                 </figure>
-                <figure><img width="53" height="23" loading="lazy" src="/asset/img/sec07-05.png" alt="Zoff"></figure>
-                <figure><img width="35" height="46" loading="lazy" src="/asset/img/sec07-06.png" alt="SHONAN BELLMARE">
+                <figure><img  loading="lazy" src="/asset/img/sec07-05.png" alt="Zoff"></figure>
+                <figure><img  loading="lazy" src="/asset/img/sec07-06.png" alt="SHONAN BELLMARE">
                 </figure>
-                <figure><img width="137" height="23" loading="lazy" src="/asset/img/sec07-07.png" alt="CyberAgent">
+                <figure><img loading="lazy" src="/asset/img/sec07-07.png" alt="CyberAgent">
                 </figure>
-                <figure><img width="96" height="15" loading="lazy" src="/asset/img/sec07-08.png" alt="Panasonic">
+                <figure><img loading="lazy" src="/asset/img/sec07-08.png" alt="Panasonic">
                 </figure>
-                <figure><img width="122" height="35" loading="lazy" src="/asset/img/sec07-09.png" alt="PASONA"></figure>
-                <figure><img width="67" height="67" loading="lazy" src="/asset/img/sec07-10.png" alt="new blance">
+                <figure><img loading="lazy" src="/asset/img/sec07-09.png" alt="PASONA"></figure>
+                <figure><img loading="lazy" src="/asset/img/sec07-10.png" alt="new blance">
                 </figure>
               </div>
-              <div class="p-sec07-content02-img-wrap scroll-top-animation">
+              <div class="sec07-content02-img-wrap scroll-top-animation only-pc-flex">
                 <figure><img width="108" height="20" loading="lazy" src="/asset/img/sec07-11.png" alt="Timberland">
                 </figure>
                 <figure><img width="33" height="37" loading="lazy" src="/asset/img/sec07-12.png" alt="PERSOL"></figure>
@@ -486,44 +487,47 @@
                 <figure><img width="37" height="41" loading="lazy" src="/asset/img/sec07-20.png" alt="NEXT ENGINE">
                 </figure>
               </div>
+              <div class="sec07-content02-img-wrap scroll-top-animation sp-only">
+                <figure><img loading="lazy" src="/asset/img/company-work.png" alt="港区"></figure>
+              </div>
             </div>
           </div>
         </div>
-        <div class="p-sec07-content03-wrap">
-          <h3 class="p-sec07-content03-ttl scroll-top-animation">ニュートラルワークスをご利用されたお客様の声</h3>
-          <div class="p-sec07-content03-youtube-wrap">
-            <div class="p-sec07-content03-youtube scroll-top-animation">
+        <div class="sec07-content03-wrap">
+          <h3 class="sec07-content03-ttl scroll-top-animation">ニュートラルワークスをご利用されたお客様の声</h3>
+          <div class="sec07-content03-youtube-wrap">
+            <div class="sec07-content03-youtube scroll-top-animation">
               <!-- youtube埋込み -->
               <div>
                 <img src="/asset/img/sec07-21.png" alt="youtube">
               </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>株式会社やまぼうし</span><br>金子様</p>
-                <p class="p-sec07-content03-youtube-description">
+              <div class="sec07-content03-youtube-detail">
+                <p class="sec07-content03-youtube-person"><span>株式会社やまぼうし</span><br>金子様</p>
+                <p class="sec07-content03-youtube-description">
                   WEBサイトにおけるデザインのクオリティアップからリスティング運用まで、プロフェッショナルの視点で的確なアドバイスとご提案を頂きました。
                 </p>
               </div>
             </div>
-            <div class="p-sec07-content03-youtube scroll-top-animation">
+            <div class="sec07-content03-youtube scroll-top-animation">
               <!-- youtube埋込み -->
               <div>
                 <img src="/asset/img/sec07-21.png" alt="youtube">
               </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>株式会社NOVASTO</span><br>佐藤様</p>
-                <p class="p-sec07-content03-youtube-description">
+              <div class="sec07-content03-youtube-detail">
+                <p class="sec07-content03-youtube-person"><span>株式会社NOVASTO</span><br>佐藤様</p>
+                <p class="sec07-content03-youtube-description">
                   ブランドイメージを「丁寧なヒアリング」と「デザイン力」で形に。今後はSEOのご提案などの集客面でのフォローにも大いに期待しています。
                 </p>
               </div>
             </div>
-            <div class="p-sec07-content03-youtube scroll-top-animation">
+            <div class="sec07-content03-youtube scroll-top-animation">
               <!-- youtube埋込み -->
               <div>
                 <img src="/asset/img/sec07-21.png" alt="youtube">
               </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>グリーライフスタイル株式会社</span><br>相馬様</p>
-                <p class="p-sec07-content03-youtube-description">
+              <div class="sec07-content03-youtube-detail">
+                <p class="sec07-content03-youtube-person"><span>グリーライフスタイル株式会社</span><br>相馬様</p>
+                <p class="sec07-content03-youtube-description">
                   決めてはなんといっても「早いレスポンス」と「高いデザイン力」。コミュニケーションも手厚くとってくださるので安心感が違いました。
                 </p>
               </div>
@@ -541,208 +545,93 @@
           <p class="p-contact-tel-read">お急ぎの方はお電話ください［受付時間 平日10:00〜19:00］</p>
         </div>
       </section>
-
-      <!-- Sec07 -->
-      <section class="p-sec07 sp-only">
-        <div class="content-width">
-          <h2 class="p-sec07-ttl scroll-top-animation">採用サイト制作実績の<br>参考事例</h2>
-          <div class="p-sec07-content01-wrap">
-            <h4 class="p-sec07-content01-ttl scroll-top-animation">Coincheck</h4>
-            <p class="p-sec07-content01-read scroll-top-animation">
-              求職者向けに会社の魅力を伝え、就職の安心材料となる社内の写真や従業員の写真、インタビュー紹介などのコンテンツ設計、デザイン、
-              実装までサポートいたします。サイト内で使用する写真の印象も重要な判断ポイントとなるため、素材撮影まで対応。</p>
-            <div class="p-sec07-content01-detail p-sec07-content01-detail-top scroll-top-animation">
-              <span class="">担当</span>
-              <p>ディレクション / デザイン / コーディング / 撮影及び撮影ディレクション</p>
-            </div>
-            <div class="p-sec07-content01-detail scroll-top-animation">
-              <span>期間</span>
-              <p>2.0ヶ月〜3.0ヶ月</p>
-            </div>
-            <div class="p-sec07-img-wrap scroll-top-animation">
-              <figure>
-                <img width="380" height="220" loading="lazy" src="/asset/img/sec07-01.png" alt="Coincheck">
-              </figure>
-              <figure>
-                <img width="476" height="209" loading="lazy" src="/asset/img/sec07-02.png" alt="サイトマップ">
-              </figure>
-            </div>
-          </div>
-          <div class="p-sec07-content02-wrap pc-only">
-            <h3 class="p-sec07-content02-ttl">多種多様な業界の取引実績</h3>
-            <div class="scroll-top-animation scroll-top-animation">
-              <div class="p-sec07-content02-img-wrap p-sec07-content02-img-wrap-top">
-                <figure><img width="89" height="49" loading="lazy" src="/asset/img/sec07-03.png" alt="JAL"></figure>
-                <figure><img width="118" height="18" loading="lazy" src="/asset/img/sec07-04.png" alt="AlpenGroup">
-                </figure>
-                <figure><img width="53" height="23" loading="lazy" src="/asset/img/sec07-05.png" alt="Zoff"></figure>
-                <figure><img width="35" height="46" loading="lazy" src="/asset/img/sec07-06.png" alt="SHONAN BELLMARE">
-                </figure>
-                <figure><img width="137" height="23" loading="lazy" src="/asset/img/sec07-07.png" alt="CyberAgent">
-                </figure>
-                <figure><img width="96" height="15" loading="lazy" src="/asset/img/sec07-08.png" alt="Panasonic">
-                </figure>
-                <figure><img width="122" height="35" loading="lazy" src="/asset/img/sec07-09.png" alt="PASONA"></figure>
-                <figure><img width="67" height="67" loading="lazy" src="/asset/img/sec07-10.png" alt="new blance">
-                </figure>
-              </div>
-              <div class="p-sec07-content02-img-wrap scroll-top-animation">
-                <figure><img width="108" height="20" loading="lazy" src="/asset/img/sec07-11.png" alt="Timberland">
-                </figure>
-                <figure><img width="33" height="37" loading="lazy" src="/asset/img/sec07-12.png" alt="PERSOL"></figure>
-                <figure><img width="50" height="38" loading="lazy" src="/asset/img/sec07-13.png" alt="mandom"></figure>
-                <figure><img width="65" height="23" loading="lazy" src="/asset/img/sec07-14.png" alt="GDO"></figure>
-                <figure><img width="76" height="20" loading="lazy" src="/asset/img/sec07-15.png" alt="GREE"></figure>
-                <figure><img width="87" height="26" loading="lazy" src="/asset/img/sec07-16.png" alt="FORVAL"></figure>
-                <figure><img width="78" height="45" loading="lazy" src="/asset/img/sec07-17.png" alt="花キューピッド"></figure>
-                <figure><img width="35" height="50" loading="lazy" src="/asset/img/sec07-18.png" alt="港区"></figure>
-                <figure><img width="54" height="32" loading="lazy" src="/asset/img/sec07-19.png" alt="WHILL"></figure>
-                <figure><img width="37" height="41" loading="lazy" src="/asset/img/sec07-20.png" alt="NEXT ENGINE">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-sec07-content03-wrap">
-          <h3 class="p-sec07-content03-ttl scroll-top-animation">ニュートラルワークスをご利用されたお客様の声</h3>
-          <div class="p-sec07-content03-youtube-wrap">
-            <div class="p-sec07-content03-youtube scroll-top-animation">
-              <!-- youtube埋込み -->
-              <div>
-                <img src="/asset/img/sec07-21.png" alt="youtube">
-              </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>株式会社やまぼうし</span><br>金子様</p>
-                <p class="p-sec07-content03-youtube-description">
-                  WEBサイトにおけるデザインのクオリティアップからリスティング運用まで、プロフェッショナルの視点で的確なアドバイスとご提案を頂きました。
-                </p>
-              </div>
-            </div>
-            <div class="p-sec07-content03-youtube scroll-top-animation">
-              <!-- youtube埋込み -->
-              <div>
-                <img src="/asset/img/sec07-21.png" alt="youtube">
-              </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>株式会社NOVASTO</span><br>佐藤様</p>
-                <p class="p-sec07-content03-youtube-description">
-                  ブランドイメージを「丁寧なヒアリング」と「デザイン力」で形に。今後はSEOのご提案などの集客面でのフォローにも大いに期待しています。
-                </p>
-              </div>
-            </div>
-            <div class="p-sec07-content03-youtube scroll-top-animation">
-              <!-- youtube埋込み -->
-              <div>
-                <img src="/asset/img/sec07-21.png" alt="youtube">
-              </div>
-              <div class="p-sec07-content03-youtube-detail">
-                <p class="p-sec07-content03-youtube-person"><span>グリーライフスタイル株式会社</span><br>相馬様</p>
-                <p class="p-sec07-content03-youtube-description">
-                  決めてはなんといっても「早いレスポンス」と「高いデザイン力」。コミュニケーションも手厚くとってくださるので安心感が違いました。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-contact scroll-top-animation">
-          <p class="p-contact-ttl">採用サイト制作ならお気軽にご相談ください</p>
-          <p class="p-contact-read">
-            他社が真似できない「早いレスポンス」「トータルの提案力」が強みです。<br>
-            採用サイト制作のプロフェッショナル、ニュートラルワークスへご相談ください。
-          </p>
-          <a href="#" class="c-square-btn scroll-top-animation">無料で採用サイトを制作を相談する</a>
-          <a href="tel:0467375958" class="p-contact-tel">0467-37-5958</a>
-          <p class="p-contact-tel-read">お急ぎの方はお電話ください［受付時間 平日10:00〜19:00］</p>
-        </div>
-      </section>
-
 
       <!-- Sec08 -->
-      <section class="p-sec08">
+      <section class="sec08">
         <div class="content-width">
-          <h2 class="p-sec08-ttl scroll-top-animation">採用サイト制作の流れ</h2>
-          <div class="p-sec08-content-wrap pc-only">
-            <div class="p-sec08-content01-left">
-              <div class="p-sec08-content01 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl01">お問い合わせ</h3>
-                <p class="p-sec08-content-read"><a
+          <h2 class="sec08-ttl scroll-top-animation">採用サイト制作の流れ</h2>
+          <div class="sec08-content-wrap only-pc-flex">
+            <div class="sec08-content01-left">
+              <div class="sec08-content01 scroll-top-animation">
+                <h3 class="sec08-content-ttl01">お問い合わせ</h3>
+                <p class="sec08-content-read"><a
                     href="#">フォーム</a>よりご連絡ください。12時間以内に弊社より折り返しご連絡を差し上げます。オウンドメディアについてのご相談内容や課題などをお持ちでしたら教えてください。</p>
               </div>
-              <div class="p-sec08-content03 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl03">ご提案とお見積もり</h3>
-                <p class="p-sec08-content-read">ヒアリング内容を踏まえて、弊社側から効果的な採用サイトの提案と見積もりをお渡しします。この段階までは無料にて対応いたします。</p>
+              <div class="sec08-content03 scroll-top-animation">
+                <h3 class="sec08-content-ttl03">ご提案とお見積もり</h3>
+                <p class="sec08-content-read">ヒアリング内容を踏まえて、弊社側から効果的な採用サイトの提案と見積もりをお渡しします。この段階までは無料にて対応いたします。</p>
               </div>
-              <div class="p-sec08-content05 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl05">戦略立案・構成案作成</h3>
-                <p class="p-sec08-content-read">着手金のお振込を確認でき次第、採用サイト制作を開始いたします。ご希望に応じてコンテンツ企画や戦略立案なども承ります。</p>
+              <div class="sec08-content05 scroll-top-animation">
+                <h3 class="sec08-content-ttl05">戦略立案・構成案作成</h3>
+                <p class="sec08-content-read">着手金のお振込を確認でき次第、採用サイト制作を開始いたします。ご希望に応じてコンテンツ企画や戦略立案なども承ります。</p>
               </div>
-              <div class="p-sec08-content07 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl07">ご確認・検収</h3>
-                <p class="p-sec08-content-read">採用サイトが一通り完成したら、全体を確認いただきます。契約時に定めた範囲内で可能な限り対応いたします。</p>
+              <div class="sec08-content07 scroll-top-animation">
+                <h3 class="sec08-content-ttl07">ご確認・検収</h3>
+                <p class="sec08-content-read">採用サイトが一通り完成したら、全体を確認いただきます。契約時に定めた範囲内で可能な限り対応いたします。</p>
               </div>
             </div>
-            <figure class="p-sec08-img pc-only">
+            <figure class="sec08-img only-pc-flex">
               <img width="64" height="736" loading="lazy" src="/asset/img/sec08-01.png" alt="採用サイト制作フロー">
             </figure>
-            <div class="p-sec08-content-right">
-              <div class="p-sec08-content02 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl02">ヒアリング</h3>
-                <p class="p-sec08-content-read">
+            <div class="sec08-content-right">
+              <div class="sec08-content02 scroll-top-animation">
+                <h3 class="sec08-content-ttl02">ヒアリング</h3>
+                <p class="sec08-content-read">
                   ヒアリングはZoomなどのテレビ会議・対面どちらでもご対応可能です。どのような記事を作成したいのか、会社や事業内容、サイトのゴールなどの全体像を含めて話し合います。</p>
               </div>
-              <div class="p-sec08-content04 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl04">ご契約</h3>
-                <p class="p-sec08-content-read">採用サイトの提案内容と見積もり金額に問題がなければご契約となります。この際、着手金として全体費用の50%を頂戴しております。</p>
+              <div class="sec08-content04 scroll-top-animation">
+                <h3 class="sec08-content-ttl04">ご契約</h3>
+                <p class="sec08-content-read">採用サイトの提案内容と見積もり金額に問題がなければご契約となります。この際、着手金として全体費用の50%を頂戴しております。</p>
               </div>
-              <div class="p-sec08-content06 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl06">デザイン作成<br>システム設計・構築</h3>
-                <p class="p-sec08-content-read">仕様要件に従ってデザイン設計・構築を行います。制作期間は内容によって異なるため、詳しくはお気軽にお問い合わせください。</p>
+              <div class="sec08-content06 scroll-top-animation">
+                <h3 class="sec08-content-ttl06">デザイン作成<br>システム設計・構築</h3>
+                <p class="sec08-content-read">仕様要件に従ってデザイン設計・構築を行います。制作期間は内容によって異なるため、詳しくはお気軽にお問い合わせください。</p>
               </div>
-              <div class="p-sec08-content08 scroll-top-animation">
-                <h3 class="p-sec08-content-ttl08">納品・公開・運用改善</h3>
-                <p class="p-sec08-content-read">ご確認が完了しましたら納品、もしくはサイト公開となります。この段階で案件が終了となり、残り50%の費用を頂戴いたします。</p>
+              <div class="sec08-content08 scroll-top-animation">
+                <h3 class="sec08-content-ttl08">納品・公開・運用改善</h3>
+                <p class="sec08-content-read">ご確認が完了しましたら納品、もしくはサイト公開となります。この段階で案件が終了となり、残り50%の費用を頂戴いたします。</p>
               </div>
             </div>
           </div>
-          <div class="p-sec08-content-wrap sp-only">
-            <div class="p-sec08-content01 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl01">お問い合わせ</h3>
-              <p class="p-sec08-content-read"><a
+          <div class="sec08-content-wrap sp-only">
+            <div class="sec08-content01 scroll-top-animation">
+              <h3 class="sec08-content-ttl01">お問い合わせ</h3>
+              <p class="sec08-content-read"><a
                   href="#">フォーム</a>よりご連絡ください。12時間以内に弊社より折り返しご連絡を差し上げます。オウンドメディアについてのご相談内容や課題などをお持ちでしたら教えてください。</p>
             </div>
-            <div class="p-sec08-content02 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl02">ヒアリング</h3>
-              <p class="p-sec08-content-read">
+            <div class="sec08-content02 scroll-top-animation">
+              <h3 class="sec08-content-ttl02">ヒアリング</h3>
+              <p class="sec08-content-read">
                 ヒアリングはZoomなどのテレビ会議・対面どちらでもご対応可能です。どのような記事を作成したいのか、会社や事業内容、サイトのゴールなどの全体像を含めて話し合います。</p>
             </div>
-            <div class="p-sec08-content03 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl03">ご提案とお見積もり</h3>
-              <p class="p-sec08-content-read">ヒアリング内容を踏まえて、弊社側から効果的な採用サイトの提案と見積もりをお渡しします。この段階までは無料にて対応いたします。</p>
+            <div class="sec08-content03 scroll-top-animation">
+              <h3 class="sec08-content-ttl03">ご提案とお見積もり</h3>
+              <p class="sec08-content-read">ヒアリング内容を踏まえて、弊社側から効果的な採用サイトの提案と見積もりをお渡しします。この段階までは無料にて対応いたします。</p>
             </div>
-            <div class="p-sec08-content04 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl04">ご契約</h3>
-              <p class="p-sec08-content-read">採用サイトの提案内容と見積もり金額に問題がなければご契約となります。この際、着手金として全体費用の50%を頂戴しております。</p>
+            <div class="sec08-content04 scroll-top-animation">
+              <h3 class="sec08-content-ttl04">ご契約</h3>
+              <p class="sec08-content-read">採用サイトの提案内容と見積もり金額に問題がなければご契約となります。この際、着手金として全体費用の50%を頂戴しております。</p>
             </div>
-            <div class="p-sec08-content05 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl05">戦略立案・構成案作成</h3>
-              <p class="p-sec08-content-read">着手金のお振込を確認でき次第、採用サイト制作を開始いたします。ご希望に応じてコンテンツ企画や戦略立案なども承ります。</p>
+            <div class="sec08-content05 scroll-top-animation">
+              <h3 class="sec08-content-ttl05">戦略立案・構成案作成</h3>
+              <p class="sec08-content-read">着手金のお振込を確認でき次第、採用サイト制作を開始いたします。ご希望に応じてコンテンツ企画や戦略立案なども承ります。</p>
             </div>
-            <div class="p-sec08-content06 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl06">デザイン作成<br>システム設計・構築</h3>
-              <p class="p-sec08-content-read">仕様要件に従ってデザイン設計・構築を行います。制作期間は内容によって異なるため、詳しくはお気軽にお問い合わせください。</p>
+            <div class="sec08-content06 scroll-top-animation">
+              <h3 class="sec08-content-ttl06">デザイン作成<br>システム設計・構築</h3>
+              <p class="sec08-content-read">仕様要件に従ってデザイン設計・構築を行います。制作期間は内容によって異なるため、詳しくはお気軽にお問い合わせください。</p>
             </div>
-            <div class="p-sec08-content07 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl07">ご確認・検収</h3>
-              <p class="p-sec08-content-read">採用サイトが一通り完成したら、全体を確認いただきます。契約時に定めた範囲内で可能な限り対応いたします。</p>
+            <div class="sec08-content07 scroll-top-animation">
+              <h3 class="sec08-content-ttl07">ご確認・検収</h3>
+              <p class="sec08-content-read">採用サイトが一通り完成したら、全体を確認いただきます。契約時に定めた範囲内で可能な限り対応いたします。</p>
             </div>
-            <div class="p-sec08-content08 scroll-top-animation">
-              <h3 class="p-sec08-content-ttl08">納品・公開・運用改善</h3>
-              <p class="p-sec08-content-read">ご確認が完了しましたら納品、もしくはサイト公開となります。この段階で案件が終了となり、残り50%の費用を頂戴いたします。</p>
+            <div class="sec08-content08 scroll-top-animation">
+              <h3 class="sec08-content-ttl08">納品・公開・運用改善</h3>
+              <p class="sec08-content-read">ご確認が完了しましたら納品、もしくはサイト公開となります。この段階で案件が終了となり、残り50%の費用を頂戴いたします。</p>
             </div>
-            <div class="p-sec08-content-option scroll-top-animation">
-              <h3 class="p-sec08-content-ttl-option"><img width="71" height="29" loading="lazy"
+            <div class="sec08-content-option scroll-top-animation">
+              <h3 class="sec08-content-ttl-option"><img width="71" height="29" loading="lazy"
                   src="/asset/img/sec08-11.png" alt="OPTION"></h3>
-              <p class="p-sec08-content-read">
+              <p class="sec08-content-read">
                 採用サイトは公開がスタートライン。<br>
                 弊社では必要に応じて、公開後の採用サイト保守や、SEO、リスティング広告などの運用サポートを行っております。別途ご相談ください。
               </p>
@@ -763,151 +652,187 @@
       </section>
 
       <!-- Sec09 -->
-      <section class="p-sec09">
+      <section class="sec09">
         <div class="content-width">
-          <h2 class="p-sec09-ttl scroll-top-animation">採用サイト制作でよくある質問</h2>
+          <h2 class="sec09-ttl scroll-top-animation">採用サイト制作でよくある質問</h2>
           <ul>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check07" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check07"><p>相談したときに、無理やり購入させられるか不安です。</p></label>
+              <label class="c-acd-label" for="acd-check07">
+                <p>相談したときに、無理やり購入させられるか不安です。</p>
+              </label>
               <div class="c-acd-content">
                 <p>今まで無理やりセールスをしたことはありませんので、ご安心下さい。本当に弊社のサービスが必要だと感じた会社様のみ、サービスの販売をさせていただいておりますので、お気軽にお問い合わせください。</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check08" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check08"><p>まず見積もりをもらうことは可能でしょうか？</p></label>
+              <label class="c-acd-label" for="acd-check08">
+                <p>まず見積もりをもらうことは可能でしょうか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check09" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check09"><p>問い合わせから制作開始までの期間を教えて下さい</p></label>
+              <label class="c-acd-label" for="acd-check09">
+                <p>問い合わせから制作開始までの期間を教えて下さい</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check10" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check10"><p>制作期間はどれくらいになりますか？</p></label>
+              <label class="c-acd-label" for="acd-check10">
+                <p>制作期間はどれくらいになりますか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check11" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check11"><p>採用サイト以外のサイト制作も可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check11">
+                <p>採用サイト以外のサイト制作も可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check12" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check12"><p>サイト制作だけでなく、その後の改善も依頼することは可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check12">
+                <p>サイト制作だけでなく、その後の改善も依頼することは可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check13" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check13"><p>サイト制作後の保守や運用も一緒に依頼することは可能でしょうか？</p></label>
+              <label class="c-acd-label" for="acd-check13">
+                <p>サイト制作後の保守や運用も一緒に依頼することは可能でしょうか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check14" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check14"><p>サイト制作後にSEO対策を依頼すること可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check14">
+                <p>サイト制作後にSEO対策を依頼すること可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check15" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check15"><p>採用サイト制作を行う際に競合の分析も行ってもらうことは可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check15">
+                <p>採用サイト制作を行う際に競合の分析も行ってもらうことは可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check16" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check16"><p>サイト制作にコンテンツマーケティングにも注力していきたい</p></label>
+              <label class="c-acd-label" for="acd-check16">
+                <p>サイト制作にコンテンツマーケティングにも注力していきたい</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check17" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check17"><p>競合他社が多い業界のため、サイト制作後に成果が出るか不安</p></label>
+              <label class="c-acd-label" for="acd-check17">
+                <p>競合他社が多い業界のため、サイト制作後に成果が出るか不安</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check18" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check18"><p>自社にWebマーケティングの知見がある担当者がいない</p></label>
+              <label class="c-acd-label" for="acd-check18">
+                <p>自社にWebマーケティングの知見がある担当者がいない</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check19" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check19"><p>サイト制作を行う際にデザイン面についてもこだわりたい</p></label>
+              <label class="c-acd-label" for="acd-check19">
+                <p>サイト制作を行う際にデザイン面についてもこだわりたい</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check20" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check20"><p>採用サイトの制作を検討しているが、予算感に不安がある</p></label>
+              <label class="c-acd-label" for="acd-check20">
+                <p>採用サイトの制作を検討しているが、予算感に不安がある</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check21" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check21"><p>具体的なサイトの制作実績が知りたいです</p></label>
+              <label class="c-acd-label" for="acd-check21">
+                <p>具体的なサイトの制作実績が知りたいです</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check22" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check22"><p>対応エリアはありますか？</p></label>
+              <label class="c-acd-label" for="acd-check22">
+                <p>対応エリアはありますか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check23" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check23"><p>働いている社員のインタビューなども載せたいが、可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check23">
+                <p>働いている社員のインタビューなども載せたいが、可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
             <li class="c-acd-img scroll-top-animation">
               <input id="acd-check24" class="c-acd-check" type="checkbox">
-              <label class="c-acd-label" for="acd-check24"><p>写真や動画などの素材がないのですが、制作は可能ですか？</p></label>
+              <label class="c-acd-label" for="acd-check24">
+                <p>写真や動画などの素材がないのですが、制作は可能ですか？</p>
+              </label>
               <div class="c-acd-content">
                 <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="p-sec09-content-wrap">
-          <div class="p-sec09-content-inner scroll-top-animation">
-            <div class="p-sec09-content-left">
-              <figure class="p-sec09-content-img">
+        <div class="sec09-content-wrap">
+          <div class="sec09-content-inner scroll-top-animation">
+            <div class="sec09-content-left">
+              <figure class="sec09-content-img">
                 <img width="363" height="201" loading="lazy" src="/asset/img/sec09-03.png" alt="採用サイト制作">
               </figure>
-              <h3 class="p-sec09-content-ttl">
+              <h3 class="sec09-content-ttl">
                 会社の理念に共感した<br>
                 優秀な人材を集める<br>
                 採用サイトを作りませんか？
               </h3>
             </div>
-            <div class="p-sec09-content-right">
+            <div class="sec09-content-right">
               <p>会社の理念に共感し、会社が求めている能力ある人材を採用することができたら、会社はどのように変わっていくでしょうか。</p>
               <p>採用は会社にとって売上・利益を生み出し、拡大するための重要なミッションであり、上手くいっている会社ほど採用には力を入れています。</p>
               <p>
